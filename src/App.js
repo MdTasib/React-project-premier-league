@@ -1,28 +1,55 @@
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const products = [
+    { name: 'Iphone', price: '$222' },
+    { name: 'Vivo', price: '$123' },
+    { name: 'Nokia', price: '$52' },
+    { name: 'Nokia', price: '$52' },
+  ]
+
   return (
     <div className="App">
       <header className="App-header">
-        <Person name='Tasib' profession='Programmar'></Person>
-        <Person name='Rafi' profession='Developer'></Person>
-        <Person name='Rakib' profession='Student'></Person>
+        {/* {
+          products.map(pd => <Product product={pd}></Product>)
+        } */}
+
+        <Counter></Counter>
+
       </header>
     </div>
   );
 }
-function Person(props) {
-  const personStyle = {
-    border: '2px solid red',
-    margin: '20px',
-    padding: '20px'
-  }
-  return (
-    <div style={personStyle}>
-      <h3>My Name Is {props.name}</h3>
-      <p>I am a {props.profession}</p>
-    </div>
+
+function Counter() {
+  const [count, setCount] = useState(0)
+  return (<div>
+    <h1>Counter: {count}</h1>
+    <button onClick={() => { setCount(count + 1) }}>+</button>
+    <button onClick={() => { setCount(count - 1) }}>-</button>
+  </div>
   )
 }
 
+function Product(props) {
+
+  const productStyle = {
+    backgroundColor: 'gray',
+    color: '#fff',
+    width: '200px',
+    margin: '15px',
+    padding: '15px'
+  }
+
+  const { name, price } = props.product;
+  return (
+    <div style={productStyle}>
+      <h3>{name}</h3>
+      <h2>{price}</h2>
+      <button>Buy Now</button>
+    </div>
+  )
+}
 export default App;
