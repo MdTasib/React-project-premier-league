@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import Count from './Components/UseState'
 
 function App() {
   const products = [
@@ -18,6 +19,7 @@ function App() {
 
         <Counter></Counter>
         <Users></Users>
+        <Count />
 
       </header>
     </div>
