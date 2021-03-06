@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       {/* <RouterComponent /> */}
 
-      <CountryRoute />
+      {/* <CountryRoute /> */}
     </div>
   )
 }
