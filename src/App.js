@@ -2,6 +2,7 @@ import './App.css';
 import RouterComponent from './Components/Friends/Route';
 import CountryRoute from './Components/Country/CountryRoute';
 import State from './Components/State/State';
+import Context from './Components/Context/Context';
 
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
 
       {/* <CountryRoute /> */}
 
-      <State />
+      {/* <State /> */}
+
+      <Context />
     </div>
   )
 }
