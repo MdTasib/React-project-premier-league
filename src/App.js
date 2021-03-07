@@ -1,6 +1,7 @@
 import './App.css';
 import RouterComponent from './Components/Friends/Route';
 import CountryRoute from './Components/Country/CountryRoute';
+import State from './Components/State/State';
 
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       {/* <RouterComponent /> */}
 
       {/* <CountryRoute /> */}
+
+      <State />
     </div>
   )
 }
