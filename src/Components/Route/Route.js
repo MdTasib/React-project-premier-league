@@ -27,10 +27,10 @@ const BasicRoute = () => {
                     </nav>
 
                     <Switch>
+                        <Route exact path='/'><Home /></Route>
                         <Route path='/home'><Home /></Route>
                         <Route path='/about'><About /></Route>
                         <Route path='/post/:id'><PostDetails /></Route>
-                        <Route path='/'><Home /></Route>
                     </Switch>
                 </div>
             </Router>
