@@ -14,7 +14,7 @@ function App() {
 
       {/* <State /> */}
 
-      <Context />
+      {/* <Context /> */}
     </div>
   )
 }

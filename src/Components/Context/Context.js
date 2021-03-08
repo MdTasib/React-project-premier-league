@@ -6,13 +6,13 @@ import Header from './Header';
 export const ContextCategory = createContext();
 
 const Context = () => {
-    const [count, setCount] = useState(0);
+    const [catagory, setCatagory] = useState('laptop');
 
     return (
         <div>
-            <ContextCategory.Provider value={count}>
-                <p>Count : {count}</p>
-                <Header count={count} setCount={setCount} />
+            <ContextCategory.Provider value={[catagory, setCatagory]}>
+                <p>catagory : {catagory}</p>
+                <Header />
                 <Home />
                 <Shipment />
             </ContextCategory.Provider>
