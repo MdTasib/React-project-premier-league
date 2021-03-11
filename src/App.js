@@ -1,23 +1,10 @@
 import './App.css';
-import RouterComponent from './Components/Friends/Route';
-import CountryRoute from './Components/Country/CountryRoute';
-import State from './Components/State/State';
-import Context from './Components/Context/Context';
-import BasicRoute from './Components/Route/Route';
-
+import Index from './Components/App.jsx'
 
 function App() {
   return (
     <div className='App'>
-      {/* <RouterComponent /> */}
-
-      {/* <CountryRoute /> */}
-
-      {/* <State /> */}
-
-      {/* <Context /> */}
-
-      <BasicRoute />
+      <Index />
     </div>
   )
 }
