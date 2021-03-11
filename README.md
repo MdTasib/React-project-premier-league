@@ -9,4 +9,4 @@ List All teams details in a league by Id :
 [https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id=4328](https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id=4328)
 
 League Details by Id :
-[https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133613](https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133613)
+[https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133613](https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133613)# React-project-premier-league
