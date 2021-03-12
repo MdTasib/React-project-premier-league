@@ -15,7 +15,7 @@ const TeamDetails = () => {
         fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`)
             .then(response => response.json())
             .then(data => setTeamDetails(data.teams[0]))
-    }, [idTeam])
+    }, [])
 
 
     const { strTeamBadge, strAlternate, strTeam, strCountry, strGender, strLeague, intFormedYear, strDescriptionEN, strDescriptionDE, strTeamFanart4, strTwitter, strFacebook, strYoutube } = teamDetails;
@@ -37,14 +37,13 @@ const TeamDetails = () => {
                             <img src={strTeamFanart4} alt="" />
                         </div>
                     </div>
-
                     <div className={classes.description}>
                         <p><strong>Team Description : </strong>{strDescriptionEN || strDescriptionDE}</p>
                     </div>
                     <div className={`${classes.social}`}>
-                        <a href={`https://${strTwitter}`}><img src={twitter} alt="" /></a>
-                        <a href={`https://${strFacebook}`}><img src={facebook} alt="" /></a>
-                        <a href={`https://${strYoutube}`}><img src={youtube} alt="" /></a>
+                        <a href={`https://${strTwitter}`} target="_blank"><img src={twitter} alt="" /></a>
+                        <a href={`https://${strFacebook}`} target="_blank"><img src={facebook} alt="" /></a>
+                        <a href={`https://${strYoutube}`} target="_blank"><img src={youtube} alt="" /></a>
                     </div>
                 </div>
             </div>
