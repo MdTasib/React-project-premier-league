@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Header from '../Home/Header';
 import classes from '../../Components/app.module.css';
 import facebook from '../../images/facebook.png';
@@ -15,7 +15,7 @@ const TeamDetails = () => {
         fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`)
             .then(response => response.json())
             .then(data => setTeamDetails(data.teams[0]))
-    }, [])
+    }, [idTeam])
 
 
     const { strTeamBadge, strAlternate, strTeam, strCountry, strGender, strLeague, intFormedYear, strDescriptionEN, strDescriptionDE, strTeamFanart4, strTwitter, strFacebook, strYoutube } = teamDetails;
