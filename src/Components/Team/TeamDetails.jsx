@@ -37,6 +37,7 @@ const TeamDetails = () => {
                             <img src={strTeamFanart4} alt="" />
                         </div>
                     </div>
+
                     <div className={classes.description}>
                         <p><strong>Team Description : </strong>{strDescriptionEN || strDescriptionDE}</p>
                     </div>
