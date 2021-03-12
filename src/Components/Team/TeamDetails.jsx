@@ -41,9 +41,9 @@ const TeamDetails = () => {
                         <p><strong>Team Description : </strong>{strDescriptionEN || strDescriptionDE}</p>
                     </div>
                     <div className={`${classes.social}`}>
-                        <a href={`https://${strTwitter}`} target="_blank"><img src={twitter} alt="" /></a>
-                        <a href={`https://${strFacebook}`} target="_blank"><img src={facebook} alt="" /></a>
-                        <a href={`https://${strYoutube}`} target="_blank"><img src={youtube} alt="" /></a>
+                        <a href={`https://${strTwitter}`}><img src={twitter} alt="" /></a>
+                        <a href={`https://${strFacebook}`}><img src={facebook} alt="" /></a>
+                        <a href={`https://${strYoutube}`}><img src={youtube} alt="" /></a>
                     </div>
                 </div>
             </div>
