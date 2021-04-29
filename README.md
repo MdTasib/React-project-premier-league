@@ -1,4 +1,6 @@
-#React Project. Useing React Router Dom And API. 
+#React Project. Useing React Router Dom And API.
+### `Host & Deploy - Netlify`
+Live Site - [https://premium-league.netlify.app/](https://premium-league.netlify.app/)
 
 API collact site : [https://www.thesportsdb.com/](https://www.thesportsdb.com/)
 or : [https://www.thesportsdb.com/api.php](https://www.thesportsdb.com/api.php)
