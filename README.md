@@ -1,4 +1,10 @@
-#React Project. Useing React Router Dom And API.
+Premier League  --   REACT PROJECT
+1. API, React-Router-Dom has been used in this project.
+2. Clicking on the Explorer button of the desired team will redirect you to the details page of this team. The page will not reload.
+3. View team titles, descriptions, images, logos, and social media ( Facebook, Twitter, Youtube ).
+
+FEATURES : React, React Hooks, React-Router-Dom, Rest API, etc.
+
 ### `Host & Deploy - Netlify`
 Live Site - [https://premium-league.netlify.app/](https://premium-league.netlify.app/)
 
